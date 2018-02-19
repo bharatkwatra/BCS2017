@@ -29,7 +29,8 @@ namespace BCSVM
         public string City { get; set; }
         public string State { get; set; }
         public List<string> ddlCtegory { get; set; }
-        
+        public int CategoryID { get; set; }
+        public string CategoryName { get; set; }
 
 
     }
