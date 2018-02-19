@@ -1,0 +1,44 @@
+﻿@using BCS2017;
+@model BCS2017.Models.RegistrationVM
+@{
+    ViewBag.Title = "Registration";
+}
+<div class="container">
+    @using (Html.BeginForm("Registration", "Registration", FormMethod.Post,new {@onsubmit="return Formvalidation()" }))
+    {
+        <div class="row">
+
+            <div class="input-group">
+                <div class="col-md-6">
+                    <div class="col-md-2">
+                        <label class="label-default mandatory" style="font-weight:bold"> URID</label>
+                        @Html.TextBoxFor(m => m.URID)
+                    </div>
+                    <div class="col-md-2">
+                        <label class="label label-default mandatory" style="font-weight:bold">First Name</label>
+                        @Html.DropDownListFor(m=>m.ddlCtegory, new List<SelectListItem> { new SelectListItem { Value = "0", Text = "Select" } })
+
+                    </div>
+
+
+
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+
+
+
+    }
+   
+
+
+
+</div>
+<h2>Registration</h2>
+

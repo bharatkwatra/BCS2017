@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2009
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BCS2017", "BCS2017\BCS2017.csproj", "{160312EA-1CD1-4424-9F8E-FAF2F81659D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BCSVM", "BCSVM\BCSVM.csproj", "{DEA501FF-68F9-429D-A4BA-5DF01D4A788C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{160312EA-1CD1-4424-9F8E-FAF2F81659D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{160312EA-1CD1-4424-9F8E-FAF2F81659D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{160312EA-1CD1-4424-9F8E-FAF2F81659D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{160312EA-1CD1-4424-9F8E-FAF2F81659D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEA501FF-68F9-429D-A4BA-5DF01D4A788C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEA501FF-68F9-429D-A4BA-5DF01D4A788C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEA501FF-68F9-429D-A4BA-5DF01D4A788C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEA501FF-68F9-429D-A4BA-5DF01D4A788C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {785743B1-5F87-46CE-A505-114BD6248F34}
+	EndGlobalSection
+EndGlobal
