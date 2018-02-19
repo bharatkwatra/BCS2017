@@ -17,29 +17,30 @@ namespace BCS2017.Repository
             SqlConnection DbConnection = new SqlConnection(strcon);
 
 
+
         }
 
-   //     public DataTable ExecuteSQLProc(string Procname)
-   //     {
-            
-   //         string strcon =
-   //ConfigurationManager.ConnectionStrings["CISDB"].ConnectionString;
-   //         SqlConnection DbConnection = new SqlConnection(strcon);
-   //         using (var conn = new SqlConnection(strcon))
-   //         using (var command = new SqlCommand("ProcedureName", conn)
-   //         {
-   //             CommandType = CommandType.StoredProcedure
-                
-   //         })
-   //         {
-   //             SqlDataAdapter adp=new SqlDataAdapter()
-   //             conn.Open();
-   //             command.ExecuteNonQuery();
-   //         }
+        //     public DataTable ExecuteSQLProc(string Procname)
+        //     {
+
+        //         string strcon =
+        //ConfigurationManager.ConnectionStrings["CISDB"].ConnectionString;
+        //         SqlConnection DbConnection = new SqlConnection(strcon);
+        //         using (var conn = new SqlConnection(strcon))
+        //         using (var command = new SqlCommand("ProcedureName", conn)
+        //         {
+        //             CommandType = CommandType.StoredProcedure
+
+        //         })
+        //         {
+        //             SqlDataAdapter adp=new SqlDataAdapter()
+        //             conn.Open();
+        //             command.ExecuteNonQuery();
+        //         }
 
 
 
-   //     }
+        //     }
 
     }
 }
