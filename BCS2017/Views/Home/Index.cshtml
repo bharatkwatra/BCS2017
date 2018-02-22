@@ -13,22 +13,40 @@
 <div class="container">
     @using (Html.BeginForm("Registration", "Registration", FormMethod.Post, new { @onsubmit = "return Formvalidation()" }))
     {
-    <div class="row">
-        <div class="input-group">
-            <div class="col-md-6">
-                <div class="col-md-3">
-                    <label class="label-default mandatory" style="font-weight:bold"> URID</label>
-                    @Html.TextBoxFor(m => m.URID)
-                </div>
-                
-            </div>
-            <div class="col-md-3">
-                @Html.DropDownListFor(n => n.CategoryID,new SelectList(Model.ddlCtegory, "CategoryName", "Select"))
-                @Html.DropDownListFor(m => m.ddlCtegory, new List<SelectListItem> { new SelectListItem { Value = "CategoryName", Text = "Select" } })
+        <div class="row">
+            <div class="input-group">
+                <div class="col-md-6">
+                    <div class="col-md-3">
+                        <label class="label-default mandatory" style="font-weight:bold"> URID</label>
+                        @Html.TextBoxFor(m => m.URID)
+                    </div>
 
+                </div>
+                <div class="col-md-3">
+                    @*@Html.DropDownListFor(n => n.CategoryName,new SelectList(Model.ddlCtegory, "Value", "Select"))*@
+                    @*@Html.DropDownListFor(m => m.CategoryName,
+                        new SelectList(Model.ddlCtegory,new SelectListItem {Value= "CategoryName" }),
+                        "Select Category")*@
+                    @Html.DropDownListFor(M => M.CategoryName, new SelectList(Model.ddlCtegory, "Text", "Value"), "Select Category")
+                    <input class="form-control" type="text" placeholder="click to show datepicker" id="example1">
+                    @*@Html.DropDownListFor(m => m.ddlCtegory, new List<SelectListItem> { new SelectListItem { Value = "CategoryName", Text = "Select" } })*@
+
+                </div>
             </div>
         </div>
-    </div>
 
     }
 </div>
+<script type="text/javascript">
+    // When the document is ready
+    $(document).ready(function () {
+
+        $('#example1').datepicker({
+            autoclose: true,
+            format: "dd/mm/yyyy",
+            todayHighlight: true,
+            endDate: new Date(),
+        });
+
+    });
+</script>

@@ -20,7 +20,7 @@ namespace BCS2017.Controllers
             dt = IndRepository.GetUserData(1);
             models.ddlCtegory = CommomMethods.ToSelectList(dt, "CategoryName", "CategoryID");
             
-            return View();
+            return View(models);
             
         }
 
